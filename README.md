@@ -1,6 +1,8 @@
 # Dashboard & Profile UI
 
 A responsive React application featuring Dashboard and Profile pages built from Figma designs. This project demonstrates interactive UI components with state management, responsive design, and clean component architecture.
+![Dashboard Preview](./src/assets/dashboard-preview.png)
+![Profile Preview](./src/assets/profile-preview.png)
 
 ## Tech Stack
 

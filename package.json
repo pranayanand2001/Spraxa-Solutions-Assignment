@@ -2,7 +2,7 @@
   "name": "dashboard-profile-ui",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://pranayanand2001.github.io/spraxa-solutions-assignment",
+  "homepage": "https://pranayanand2001.github.io/Spraxa-Solutions-Assignment",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",

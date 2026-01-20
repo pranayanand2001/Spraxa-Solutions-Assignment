@@ -1,0 +1,344 @@
+.profile {
+  padding: 24px 48px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.profileHeader {
+  padding: 16.5px;
+  margin-bottom: 24px;
+  background: linear-gradient(137deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.8) 100%);
+  border: 1.5px solid #ffffff;
+  box-shadow: 0px 2px 5.5px 0px rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(21px);
+}
+
+.profileContent {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.avatarSection {
+  position: relative;
+}
+
+.editButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  padding: 0;
+}
+
+.editButton:hover {
+  transform: scale(1.1);
+}
+
+.profileInfo {
+  flex: 1;
+}
+
+.profileName {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 4px 0;
+}
+
+.profileEmail {
+  font-size: 14px;
+  color: #718096;
+  margin: 0;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 517fr 517fr 517fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.infoCard,
+.settingsCard,
+.conversationsCard,
+.projectsCard {
+  padding: 21px;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 16px 0;
+}
+
+.bio {
+  font-size: 12px;
+  color: #a0aec0;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(224, 225, 226, 0) 0%, rgba(224, 225, 226, 1) 50%, rgba(224, 225, 226, 0.16) 99%);
+  margin: 16px 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detailLabel {
+  font-size: 12px;
+  font-weight: 700;
+  color: #718096;
+  min-width: 100px;
+}
+
+.detailValue {
+  font-size: 12px;
+  color: #718096;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 12px;
+}
+
+.socialLink {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #718096;
+  font-size: 10px;
+  transition: color 0.2s ease;
+}
+
+.socialLink:hover {
+  color: #2d3748;
+}
+
+.settingsSection {
+  margin-bottom: 24px;
+}
+
+.settingsSection:last-child {
+  margin-bottom: 0;
+}
+
+.sectionLabel {
+  font-size: 10px;
+  font-weight: 700;
+  color: #a0aec0;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+  letter-spacing: 0.5px;
+}
+
+.conversationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.conversationItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.conversationItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.conversationInfo {
+  flex: 1;
+}
+
+.conversationName {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 4px 0;
+}
+
+.conversationMessage {
+  font-size: 12px;
+  color: #718096;
+  margin: 0;
+}
+
+.replyButton {
+  color: #4fd1c5;
+  align-self: flex-start;
+}
+
+.cardHeader {
+  margin-bottom: 24px;
+}
+
+.cardSubtitle {
+  font-size: 14px;
+  color: #a0aec0;
+  margin: 4px 0 0 0;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.projectCard {
+  border: 1px solid #e0e1e2;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.projectCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projectImage {
+  width: 100%;
+  height: 191.5px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  opacity: 0.8;
+}
+
+.projectContent {
+  padding: 16px;
+}
+
+.projectNumber {
+  font-size: 10px;
+  color: #a0aec0;
+  margin: 0 0 8px 0;
+}
+
+.projectName {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 8px 0;
+}
+
+.projectDescription {
+  font-size: 12px;
+  color: #a0aec0;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+}
+
+.projectFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectMembers {
+  display: flex;
+  gap: 4px;
+}
+
+.viewAllButton {
+}
+
+.createProjectCard {
+  border: 1px dashed #e0e1e2;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 353px;
+  background: transparent;
+}
+
+.createProjectCard:hover {
+  border-color: #4fd1c5;
+  background: rgba(79, 209, 197, 0.05);
+}
+
+.createIcon {
+  font-size: 30px;
+  color: #718096;
+  margin-bottom: 12px;
+}
+
+.createText {
+  font-size: 18px;
+  font-weight: 700;
+  color: #718096;
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .profile {
+    padding: 16px;
+  }
+
+  .profileContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .conversationItem {
+    flex-wrap: wrap;
+  }
+
+  .replyButton {
+    width: 100%;
+    margin-top: 8px;
+  }
+}

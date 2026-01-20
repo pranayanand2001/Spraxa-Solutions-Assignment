@@ -1,0 +1,159 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22.5px 48px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.breadcrumbText {
+  font-size: 12px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.pageTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 0.5px solid #e2e8f0;
+  border-radius: 15px;
+  padding: 0;
+  height: 39.5px;
+  width: 199px;
+}
+
+.searchIcon {
+  padding: 0 12px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  font-size: 12px;
+  color: #2d3748;
+  background: transparent;
+}
+
+.searchInput::placeholder {
+  color: #a0aec0;
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 11.5px 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  color: #718096;
+  transition: color 0.2s ease;
+}
+
+.actionButton:hover {
+  color: #2d3748;
+}
+
+.actionIcon {
+  font-size: 12px;
+}
+
+.actionText {
+  font-size: 12px;
+}
+
+.iconButton {
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.iconButton:hover {
+  transform: scale(1.1);
+}
+
+.menuButton {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 8px;
+  color: #2d3748;
+}
+
+@media (max-width: 1024px) {
+  .topbar {
+    padding: 16px 24px;
+  }
+
+  .searchForm {
+    width: 150px;
+  }
+
+  .actionText {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    padding: 12px 16px;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .searchForm {
+    display: none;
+  }
+
+  .actionButton {
+    display: none;
+  }
+
+  .iconButton {
+    display: none;
+  }
+}
